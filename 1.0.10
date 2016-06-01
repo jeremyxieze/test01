@@ -539,7 +539,7 @@ display:none;
 
 }
 .SnLast{
-	padding-bottom:1.4rem;
+	padding-bottom:4.4rem;
 	display:table;
 	margin:0 auto;
 }
