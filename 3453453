@@ -1,0 +1,394 @@
+@model System.Collections.Hashtable
+
+@{
+    Layout = "~/Views/Shared/_Layout_NoHead.cshtml";
+    ViewBag.Title = "喝奶粉还能赚钱？！飞鹤宝妈豪豪哒！";
+    List<MEDI.ERP.Model.OrdersEntity> list = ViewBag.MGMList;
+}
+@section HeadMisc{
+
+    @*<link href="http://c0.feiheimg.com/?p=m/css/1.0.2/appmgm.css&id=2016040701" rel="stylesheet">*@
+    <script src="http://j2.feiheimg.com/?p=global/js/1.0.0/fh.validate.js,plus/1.0.0/jweixin-1.0.0.js&id=2016041301"></script>
+    @*<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>*@
+
+
+    <link href="/m/css/appmgm.css?id=1" rel="stylesheet" type="text/css" />
+    @*<script src="http://www.feihe.com/static/js/fh.validate.js"></script>*@
+}
+
+<div class="mgmSucess" style="display:none;">
+    <div class="shareRule">
+        <img src="http://i0.feiheimg.com/img/m/mgm/mgmTel_02.jpg" class="mgmTel_02" />
+        <a href="javascript:void(0)" id="open-clicks">活动规则</a>
+    </div>
+    <div class="mgmTime">
+        <img src="http://i1.feiheimg.com/img/m/mgm/mgmTel_03.jpg" />
+        <i>活动时间：2016.5.30-2016.6.30</i>
+    </div>
+    <div class="oldCon">
+        <div class="oldTitel">
+            首次推荐成功奖励
+            <a href="javascript:void(0);" class="lookGift">查看我的奖品</a>
+        </div>
+        <ul class="giftList">
+            <li>
+                <em>200</em><i>元手机话费</i>
+                <span>首单满1000元即可领取</span>
+            </li>
+            <li>
+                <em>50</em><i>元手机话费</i>
+                <span>首单满300元即可领取</span>
+            </li>
+        </ul>
+        <div class="oldTitel">
+            推荐好友获得返现
+        </div>
+        <ul class="giftMoney">
+            <li>
+                好友下单成功我得
+                <img src="http://i2.feiheimg.com/img/m/mgm/gift2.jpg" />
+            </li>
+            <li>
+                奖励可累加，多邀多得
+                <img src="http://i3.feiheimg.com/img/m/mgm/gift1.jpg" />
+            </li>
+        </ul>
+        <div class="giftText">
+            目前已有<i>@ViewBag.Count</i>位鹤妈获得了<i>@ViewBag.Amt</i>元现金奖励
+        </div>
+        <input type="button" class="shareBtn" value="分享好友赚现金" />
+        <input type="button" class="shopBtn" value="返回商城首页" onclick="javascript: window.location.href = '/';" />
+        <div class="allGet">
+            <i class="getTitle"><i>好友战<span>绩</span></i></i>
+            <ul>
+                @if (list != null && list.Count > 0)
+                {
+                    foreach (var n in list)
+                    {
+                        <li>
+                            <span class="uesrName" style="color:#fff">@MEDI.FrameWork.Utils.StringUtils.GetStringWithMark(n.OrderCode.ToString(), 7, 3)</span>
+                            <span class="uesrGet">@n.CreateTime.ToString("yy-MM-dd")</span>
+                            <span class="userUse userUsed">@n.NetAmt</span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="shareDia" style="display:none">
+            <span>
+                请点击右上角<br />
+                将他发送给指定朋友<br />
+                或分享给朋友圈<br />
+            </span>
+        </div>
+    </div>
+
+    @*<img src="http://i0.feiheimg.com/img/m/mgm0406/mgmConOld.png" class="mgmCon" />
+    <div class="mgmTime">活动时间2016.4.15~2016.5.16</div>
+    <a href="javascript:void(0)" class="mgmRule" id="open-clicks">活动规则</a>
+    <div class="mgmText">
+        <div class="mgmReward">
+            <div class="mgmMoney">
+                <i>￥530</i>
+                <span class="moneyText">
+                    恭喜您<b>￥530</b>元红包加入<br />
+                    <span>您的<i>@(string.IsNullOrEmpty(ViewBag.UserMobile) ? ViewBag.CusCode : MEDI.FrameWork.Utils.StringUtils.GetStringWithMark(ViewBag.UserMobile, 4, 3))</i>账户</span>
+                    <a href="javascript:void(0);" onclick="openapp('account')" class="lookGift">立即查看</a>
+                </span>
+            </div>
+            <div class="mgmResult">
+                推荐好友领530元红包，好友每次下单，<i>您得<span>10%现金返利</span>（无上限）</i>
+                <img src="http://i0.feiheimg.com/img/m/mgm0406/right.png" class="ResultRight" />
+                <img src="http://i0.feiheimg.com/img/m/mgm0406/left.png" class="Resultleft" />
+            </div>
+        </div>
+        <div class="sanjiao"></div>
+        <div class="moreReward">
+            <div class="moreMoney">
+                好友下单成功我得<b>10%</b>
+            </div>
+            <div class="morePro">
+                奖励可累加，多邀多得<b>@(ViewBag.MGMAmt)</b>
+            </div>
+        </div>
+        <div class="mgmSum">
+                目前已有<i>@ViewBag.Count</i>位飞鹤妈妈获得了<i>@ViewBag.Amt</i>元现金奖励
+            </div>
+    </div>
+    <a href="javascript:void(0);" class="shareBtn">分享好友赚现金</a>
+    <div class="allGet">
+        <i class="getTitle"><i>好友战<span>绩</span></i></i>
+        <ul>
+            @if (list != null && list.Count > 0)
+            {
+                foreach (var n in list)
+                {
+                    <li>
+                        <span class="uesrName" style="color:#fff">@MEDI.FrameWork.Utils.StringUtils.GetStringWithMark(n.OrderCode.ToString(), 7, 3)</span>
+                        <span class="uesrGet" style="width:1.6rem">@n.CreateTime.ToString("yy-MM-dd")</span>
+                        <span class="userUse userUsed">@n.NetAmt</span>
+                    </li>
+                }
+            }
+        </ul>
+    </div>*@
+    <div class="shareDia" style="display:none;">
+        <div>
+            <div class="diaLog">
+                <div class="AppSOld">
+                    <div class="OldHead"><span>分享到</span></div>
+                    <div class="OldCenter">
+                        <ul>
+                            <li><a href="javascript:void(0);" onclick="openapp('pengyou')"><img src="http://i0.feiheimg.com/img/m/appmgm/quanzi.jpg" /><span>朋友圈</span></a></li>
+                            <li><a href="javascript:void(0);" onclick="openapp('weixin')"><img src="http://i1.feiheimg.com/img/m/appmgm/weixinxin.jpg" /><span>微信</span></a></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0);" class="OldFoot"><span>取消</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="shareOld">
+    <div class="shareRule">
+        <img src="http://i0.feiheimg.com/img/m/mgm/mgmTel_02.jpg" class="mgmTel_02" />
+        <a href="javascript:void(0)" id="open-clicks1">活动规则</a>
+    </div>
+    <div class="mgmTime">
+        <img src="http://i1.feiheimg.com/img/m/mgm/mgmTel_03.jpg" />
+        <i>活动时间：2016.5.30-2016.6.30</i>
+    </div>
+    <div class="oldCon">
+        <div class="oldTitel">
+            首次推荐成功奖励
+            <a href="javascript:void(0);" class="lookGift">查看我的奖品</a>
+        </div>
+        <ul class="giftList">
+            <li>
+                <em>200</em><i>元手机话费</i>
+                <span>首单满1000元即可领取</span>
+            </li>
+            <li>
+                <em>50</em><i>元手机话费</i>
+                <span>首单满300元即可领取</span>
+            </li>
+        </ul>
+        <div class="oldTitel">
+            推荐好友获得返现
+        </div>
+        <ul class="giftMoney">
+            <li>
+                好友下单成功我得
+                <img src="http://i2.feiheimg.com/img/m/mgm/gift2.jpg" />
+            </li>
+            <li>
+                奖励可累加，多邀多得
+                <img src="http://i3.feiheimg.com/img/m/mgm/gift1.jpg" />
+            </li>
+        </ul>
+        <div class="giftText">
+            目前已有<i>@ViewBag.Count</i>位鹤妈获得了<i>@ViewBag.Amt</i>元现金奖励
+        </div>
+        <input type="button" class="shareBtn" value="分享好友赚现金" />
+        <input type="button" class="shopBtn" value="返回商城首页" onclick="javascript: window.location.href = '/';" />
+        <div class="allGet">
+            <i class="getTitle"><i class="getTitleST">好友战<span>绩</span></i></i>
+            <ul>
+                @if (list != null && list.Count > 0)
+                {
+                    foreach (var n in list)
+                    {
+                        <li>
+                            <span class="uesrName" style="color:#fff">@MEDI.FrameWork.Utils.StringUtils.GetStringWithMark(n.OrderCode.ToString(), 7, 3)</span>
+                            <span class="uesrGet">@n.CreateTime.ToString("yy-MM-dd")</span>
+                            <span class="userUse userUsed">@n.NetAmt</span>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+        <div class="shareDia" style="display:none">
+            <span>
+                请点击右上角<br />
+                将他发送给指定朋友<br />
+                或分享给朋友圈<br />
+            </span>
+        </div>
+    </div>
+
+    @*<img src="http://i0.feiheimg.com/img/m/mgm0406/mgmConOld.png" class="mgmCon" />
+        <div class="mgmTime">活动时间2016.5.17~2016.6.16</div>
+
+        <div class="mgmText">
+            <div class="mgmReward">
+                <div class="mgmMoney">
+                    <i>￥530</i>
+                    <span class="moneyText">
+                        恭喜您<b>￥530</b>元红包加入<br />
+                        <span>您的<i>@(string.IsNullOrEmpty(ViewBag.UserMobile) ? ViewBag.CusCode : MEDI.FrameWork.Utils.StringUtils.GetStringWithMark(ViewBag.UserMobile, 4, 3))</i>账户</span>
+                        <a href="/Acct/account?status=1" class="lookGift">立即查看</a>
+                    </span>
+                </div>
+                <div class="mgmResult">
+                  推荐好友领530元红包，好友每次下单，<i>您得<span>10%现金返利</span>（无上限）</i>
+                    <img src="http://i0.feiheimg.com/img/m/mgm0406/right.png" class="ResultRight" />
+                    <img src="http://i0.feiheimg.com/img/m/mgm0406/left.png" class="Resultleft" />
+                </div>
+            </div>
+            <div class="sanjiao"></div>
+            <div class="moreReward">
+                <div class="moreMoney">
+                    好友下单成功我得<b>10%</b>
+                </div>
+                <div class="morePro">
+                    奖励可累加，多邀多得<b>@(ViewBag.MGMAmt)</b>
+                </div>
+            </div>
+            <div class="mgmSum">
+                目前已有<i>@ViewBag.Count</i>位飞鹤妈妈获得了<i>@ViewBag.Amt</i>元现金奖励
+            </div>
+        </div>*@
+    @*<a href="javascript:void(0);" class="shareBtn">分享好友赚现金</a>*@
+
+
+</div>
+
+
+<div>
+    <div>
+
+    </div>
+</div>
+
+<div class="inv-new-page">
+    <div class="inv-span">
+        <a href="javascript:void(0)" id="close-clicks1"></a>
+        <div class="inv-new-into">
+            <span>活动时间</span>
+            <ul>
+                <li>2016年5月30日-2016年6月30日。</li>
+            </ul>
+            <span>推荐返现规则</span>
+            <ul id="li-sty">
+                <li>
+                    指定活动期间内完成推荐，被推荐人在飞鹤官网成功下单购买，推荐人可获得每笔订单金额10%的现金返利；
+                </li>
+                <li>对于被推荐人首次购买日起的一年内所有有效购买订单，推荐人都可以获得10%现金返利；不限推荐人数；现金奖励可累加、无上限，现金返利金额永久有效；</li>
+                <li>返利金额将于订单出库后的30天内到账（限无退货订单）；</li>
+                <li>指定活动期间内成功完成首笔推荐，将额外获得手机话费奖励；
+被推荐人首次订单金额大于等于1000元，推荐人可获200元手机话费奖励；
+被推荐人首次订单金额小于1000元，推荐人可获50元手机话费奖励；
+</li>
+                <li>话费奖励只针对成功推荐的首笔订单；</li>
+                <li>话费奖励发放时间：被推荐人首次订单出库的30天后（无退换货），话费将于5天内充值到推荐人手机账户。</li>
+                <li>非正常途径获得的现金奖励无效，飞鹤官方商城保留最终解释权； </li>
+                <li>其他问题，请联系飞鹤微信客服，搜索微信官方服务号【飞鹤官方商城】</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="inv-new-pagee" style="display:none;" >
+    <div class="invs-span">
+        <a href="javascript:void(0)" id="close-clickS"></a>
+        <div class="inv-new-intoo">
+            <span>话费奖励发放时间：</span>
+            <ul>
+                <li>被推荐人首次订单出库的30天后（无退换货），话费将于5天内充值到推荐人手机账户。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".shareDia").click(function () {
+            $(this).css("display", "none");
+        });
+        $(".openDialog").click(function () {
+            window.history.go(-1);
+        });
+        $(".shareBtn").click(function () {
+            $(".shareDia").css("display", "");
+        });
+    })
+    function hid() {
+        $(".shareDia").css("display", "");
+    };
+
+    $(document).ready(function () {
+        $("#open-clicks").click(function () {
+            $(".inv-new-page").css({ display: "table" });
+        });
+        $("#close-clicks").click(function () {
+            $(".inv-new-page").css({ display: "none" });
+        });
+    });
+
+
+    function getQueryString(name) {
+
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+
+        var r = window.location.search.substr(1).match(reg);
+
+        if (r != null) return unescape(r[2]); return null;
+
+    }
+
+    function openapp(appid) {
+        if (appid == "pengyou") {
+            appid = "type=100||sharetype=2";
+        }
+        if (appid == "weixin") {
+            appid = "type=100||sharetype=1";
+        }
+        else if (appid == "account") {
+            appid = "type=18||";
+        }
+        var ostype = getQueryString("ostype");
+
+        if (ostype == "1") {
+            appid = "md://iphoneapp?" + appid;
+
+            $("body").append("<iframe id='appiframe' src='" + appid + "' style='display: none;'></iframe>");
+
+        } else if (ostype == null || ostype == "") {
+
+            window.phone.startWebActivity(appid);
+            
+        }
+
+    }
+
+
+    $(document).ready(function () {
+        $("#open-clicks1").click(function () {
+            $(".inv-new-page").css({ display: "table" });
+        });
+        $("#close-clicks1").click(function () {
+            $(".inv-new-page").css({ display: "none" });
+        });
+    });
+
+
+    $(document).ready(function () {
+        $(".lookGift").click(function () {
+            $(".inv-new-pagee").css({ display: "table" });
+        });
+        $("#close-clickS").click(function () {
+            $(".inv-new-pagee").css({ display: "none" });
+        });
+    });
+
+
+</script>
+
+
+
+
+
+
+
