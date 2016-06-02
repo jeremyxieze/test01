@@ -412,7 +412,7 @@ display:none;
 	color:#fff;
 	background-position:left 0.1rem;
 	font-size:0.18rem;
-	line-height:0.21rem;
+	line-height:0.24rem;
 	margin-bottom:0.0rem;
 }
 #close-clicks{
