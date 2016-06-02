@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
  
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>享新鲜品质，领飞鹤大礼！550元红包等你领，邀请好友还有现金奖励哦~ - 飞鹤</title>
+    <title>喝奶粉还能赚钱？！飞鹤宝妈豪豪哒！ - 飞鹤</title>
     <meta name="Keywords">
     <meta name="Description">   
     <meta name="format-detection" content="telephone=no" />
@@ -41,8 +41,11 @@
  
     
 
-<link href="http://c0.feiheimg.com/?p=m/css/1.0.2/appmgm.css&id=2016040701" rel="stylesheet">
-    <script src="http://j3.feiheimg.com/?p=global/js/1.0.0/fh.validate.js,plus/1.0.0/jweixin-1.0.0.js&id=2016032201"></script>
+
+<script src="http://j2.feiheimg.com/?p=global/js/1.0.0/fh.validate.js,plus/1.0.0/jweixin-1.0.0.js&id=2016041301"></script>
+
+
+<link href="/m/css/appmgm.css?id=1" rel="stylesheet" type="text/css" />
     
     
  
@@ -57,9 +60,9 @@
         })();
     </script>
     
+    <style>
     
- <style>
- 	/*妈妈推荐妈妈老用户*/
+    	/*妈妈推荐妈妈老用户*/
 .shareOld{
     width:100%;
     background:#13b1f8;
@@ -371,18 +374,21 @@ display:none;
 	padding-left:0.3rem;
 	color:#fff;
 	background-position:left center;
-	font-size:0.24rem;
-	line-height:0.35rem;
-	margin-bottom:0.2rem;
-	margin-top:0.15rem;
+	font-size:0.18rem;
+	line-height:0.28rem;
+	margin-bottom:0.08rem;
+	margin-top:0.08rem;
 }
 .inv-new-page p{
 	color:#fff;
 }
 .inv-new-page span{
 	color:#ffec94;
-	font-size:0.30rem;
-	line-height:0.30rem;
+	font-size:0.25rem;
+	line-height:0.25rem;
+   display:block;
+   margin-top:0.05rem;
+   margin-bottom:0.05rem;
 }
 .inv-new-page a{
 	background:url(http://i1.feiheimg.com/img/m/mgm0406/off-button.png);
@@ -396,9 +402,87 @@ display:none;
 	margin-bottom:0.2rem;
 }
 #li-sty{
-	margin-top:0.1rem;
+	/*margin-top:0.1rem;*/
 }
 #li-sty li{
+		background:url(http://i2.feiheimg.com/img/m/mgm0406/new-li-style.png);
+	background-repeat:no-repeat;
+	background-size:0.1rem 0.1rem;
+	padding-left:0.3rem;
+	color:#fff;
+	background-position:left 0.1rem;
+	font-size:0.18rem;
+	line-height:0.21rem;
+	margin-bottom:0.0rem;
+}
+#close-clicks{
+	
+}  
+/*新弹出框end*/
+
+
+/*NEW弹框*/
+  .inv-new-page-s{
+display:none;
+	background:rgba(0,0,0,0.8);
+	position:fixed;
+	width:100%;
+	z-index:99999;
+    top:0rem;
+    left:0;
+    margin:0 auto;
+    height:100%;
+}
+.inv-span-s{
+    display:table-cell;
+    vertical-align:middle;
+}
+.inv-new-into-s{
+   
+	clear:both;
+	margin-left:0.25rem;
+	margin-right:0.25rem;
+	background:#ff364d;
+	padding:0.5rem 0.3rem;
+}
+.inv-new-page-s ul{
+
+}
+.inv-new-page-s li{
+	background:url(http://i0.feiheimg.com/img/m/mgm0406/new-li-style.png);
+	background-repeat:no-repeat;
+	background-size:0.1rem 0.1rem;
+	padding-left:0.3rem;
+	color:#fff;
+	background-position:left center;
+	font-size:0.24rem;
+	line-height:0.35rem;
+	margin-bottom:0.2rem;
+	margin-top:0.15rem;
+}
+.inv-new-page-s p{
+	color:#fff;
+}
+.inv-new-page-s span{
+	color:#ffec94;
+	font-size:0.30rem;
+	line-height:0.30rem;
+}
+.inv-new-page-s a{
+	background:url(http://i1.feiheimg.com/img/m/mgm0406/off-button.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	height:0.28rem;
+	width:0.27rem;
+	display:block;
+	float:right;
+	margin-right:0.25rem;
+	margin-bottom:0.2rem;
+}
+#li-sty-s{
+	margin-top:0.1rem;
+}
+#li-sty-s li{
 		background:url(http://i2.feiheimg.com/img/m/mgm0406/new-li-style.png);
 	background-repeat:no-repeat;
 	background-size:0.1rem 0.1rem;
@@ -409,10 +493,11 @@ display:none;
 	line-height:0.35rem;
 	margin-bottom:0.0rem;
 }
-#close-clicks{
+#close-clicks-s{
 	
 }  
-/*新弹出框end*/
+
+/*end*/
 
 /*请在微信打开的提示*/
 .openDialog{
@@ -539,7 +624,7 @@ display:none;
 
 }
 .SnLast{
-	padding-bottom:4.4rem;
+	padding-bottom:1.4rem;
 	display:table;
 	margin:0 auto;
 }
@@ -619,7 +704,7 @@ display:none;
 	line-height:1.8rem;
 	color:#4e4e4e;
 	margin-right:0.45rem;
-	padding-bottom:3rem;
+	
 }
 .RecCen{
 	padding:0rem 0.45rem;
@@ -800,7 +885,87 @@ width:5.5rem;
     margin-bottom:0.08rem;
     margin-top:0.08rem;
 }
- </style>
+
+.shareDia{
+    width:100%;
+    height:100%;
+    min-height:100%;
+    background:rgba(0,0,0,0.8);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:10086;
+    display:table;
+}
+
+.shareDia > div{
+    width:100%;
+    display:table-cell;
+    vertical-align:middle;
+}
+.AppSOld{
+    width:100% !important;
+    background:#fff;
+    overflow:hidden;
+}
+.OldHead{
+    height:0.92rem;
+    width:100% !important;
+    box-sizing:border-box;
+    padding-left:0.4rem;
+    border-bottom:1px solid #d7d7d7;
+    background:#fff;
+   
+}
+.OldHead span{
+     font-size:0.26rem;
+    color:#222222;
+    line-height:0.9rem;
+}
+.OldCenter{
+    width:100% !important;
+    background:#fff;
+    height:2.9rem;
+}
+.OldCenter li{
+    float:left;
+    width:50%;
+    height:2.9rem;
+    position:relative;
+    text-align:center;
+    padding-top:0.58rem;
+    border-bottom:1px solid #d7d7d7;
+    box-sizing:border-box;
+}
+.OldCenter li img {
+    height:1.19rem;
+    width:1.19rem;
+    display:block;
+    margin:0 auto;
+    
+}
+.OldCenter li span {
+    font-size:0.26rem;
+    color:#222222;
+    padding-top:0.29rem;
+    display:block;
+     
+}
+.OldFoot{
+    display:block;
+    clear:both;
+    height:1rem;
+    width:100%;
+    text-align:center;
+    background:#fff;
+}
+
+.OldFoot span{
+    font-size:0.32rem;
+    color:#222222;
+     line-height:1rem;
+}
+    </style>
 </head>
 <script>
     var IsMobile = 1;
@@ -814,66 +979,117 @@ width:5.5rem;
         
 
 
+<div class="inv-new-page" style="display:none;">
+    <a href="javascript:void(0)" id="close-clicks2"></a>
+    <div class="inv-new-into">
+        <span>活动时间</span>
+        <ul>
+            <li>2016年5月30日-2016年6月30日。</li>
+        </ul>
+        <span>新客户专享礼包规则</span>
+        <ul id="li-sty">
+            <li>
+                530元红包礼券:300元（满2000可用）、150元（满1000可用）、50元（满400可用）和30元（无消费限制）各一张；
+                礼券有效期：指定活动期间内有效；
+            </li>
+           <li>超高端奶粉“星飞帆”小听装130g（3段）将随同活动期间内（2016年5月30日-2016年6月30日）第一笔订单发出；</li>
+            <li>仅限飞鹤官网新用户享受。同一个手机号、微信号、支付账户、银行卡号，设备号均视为一个用户。</li>
+        </ul>
+        <span>推荐返现规则</span>
+        <ul>
+            <li>指定活动期间内完成推荐，被推荐人在飞鹤官网成功下单购买，推荐人可获得每笔订单金额10%的现金返利；</li>
+            <li>对于被推荐人首次购买日起的一年内所有有效购买订单，推荐人都可以获得10%现金返利；不限推荐人数；现金奖励可累加、无上限，现金返利金额永久有效；</li>
+            <li>返利金额将于订单出库后的30天内到账（限无退货订单）；</li>
+            <li>指定活动期间内成功完成首笔推荐，将额外获得手机话费奖励；
+被推荐人首次订单金额大于等于1000元，推荐人可获200元手机话费奖励；
+被推荐人首次订单金额小于1000元，推荐人可获50元手机话费奖励；
+</li>
+            <li>话费奖励只针对成功推荐的首笔订单；</li>
+            <li>话费奖励发放时间：被推荐人首次订单出库的30天后（无退换货），话费将于5天内充值到推荐人手机账户。</li>
+            <li>非正常途径获得的现金奖励无效，飞鹤官方商城保留最终解释权； </li>
+            <li>其他问题，请联系飞鹤微信客服，搜索微信官方服务号【飞鹤官方商城】</li>
+        </ul>
+    </div>
+
+</div>
 
 
 <div class="mgmRec">
-    <div class="mgmSn-fs"></div>
-    <div class="mgmSn-se"></div>
-    <div class="mgmSn-th"><span>活动时间:2016.5.30-2016.6.30</span></div>
-    <div class="SnCen">
-
-        <img src="http://wx.qlogo.cn/mmopen/l0NIs58iaqkOLGNIRqjTKRNF2xUfKEbClge4AxiaT6bLZmtQwxNxUmXXWZeDolkdP5kGZ8edNNgCmWFVkZ5qdos6mp7FHxKaic4/0" class="Sntest">
-
-        <img src="http://i3.feiheimg.com/img/m/mgm/Snsanjiao.png" class="Snsanjiao">
-        <div class="SnCon">
-            亲爱的aa，我家宝宝一直吃飞鹤奶粉，身体棒棒的！我刚争取到一个飞鹤官网“送530元红包+免费领一罐超高端星飞帆3段体验装”的机会，现在分享给你，快去领取吧！
-        </div>
-        <div class="SnLast">
-            <input type="submit" class="SnInput" value="领取我的专享大礼包" onclick="lottery()" />
+    <div class="mgmRec-fs"><a href="javascript:void(0);" id="open-clicks2">活动规则</a></div>
+    <div class="mgmRec-se"></div>
+    <div class="mgmRec-th"><span>活动时间:2016.5.30-2016.6.30</span></div>
+    <div class="RecCen">
+        <div class="Rec-span"><span>新会员奖励</span><a id="divsee" href="javascript:void(0);" onclick="openapp('type=18||')">立即查看</a></div>
+        <div class="RecCon">
+            <div class="RecConFs">
+                <p>￥530</p>
+                <span><b>恭喜您<i>530</i>元红包加入</b>您的<em>138*****000</em>账户</span>
+            </div>
+            <div class="RecConSe">
+                <img src="http://i2.feiheimg.com/img/m/mgm/xff-test.png">
+                <span>星飞帆体验装</span>
+                <i>将随您的第一份订单发出！</i>
+            </div>
+            <div class="RecBut">
+                <input type="submit" value="立即购买" onclick="openapp('type=2||classid=88')"  />
+            </div>
         </div>
     </div>
 </div>
-
 <script>
     $(function () {
         $(".openDialog").click(function () {
             window.history.go(-1);
         });
-        $(".shareBtn").click(function () {
-            $(".shareDia").css("display", "");
+        $("#open-clicks").bind("click", function () {
+            $(".inv-new-page").css({ display: "" });
         });
-    })
-    function lottery() {
-        var mobile = $(".mgmPhone").val();
-        $.ajax({
-            url: "/appmgm/AjaxRecommend",
-            dataType: "json",
-            data: { mobile: mobile, code: 7, recommendcuscode: '3018311' },
-            method: "post",
-            success: function (data) {
-                if (data.success) {
-                    alert("恭喜你，红包已添加至“我的钱包”");
-                     window.location.href = "/AppMGM/AppShareNew?ostype=&cuscode=3018311";
-                } else {
+        $("#close-clicks").bind("click", function () {
+            $(".inv-new-page").css({ display: "none" });
+        });
+    });
+    function getQueryString(name) {
 
-                    if (data.msg != null) {
-                        alert(data.msg);
-                        if (data.code == "3") {
-                            window.location.href = "/AppMGM/AppShareNew?ostype=&cuscode=3018311";
-                        }
-                    }
-                    else {
-                        alert("每个用户只能领取红包一次")
-                        window.location.href = "/AppMGM/AppShareNew?ostype=&cuscode=3018311";
-                    }
-                }
-            },
-            error: function (e) {
-                issubmit = false;
-            }
-        });
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+
+        var r = window.location.search.substr(1).match(reg);
+
+        if (r != null) return unescape(r[2]); return null;
+
     }
+
+    function openapp(appid) {
+        var ostype = getQueryString("ostype");
+        if (ostype == "1") {
+            appid = "md://iphoneapp?" + appid;
+
+            $("body").append("<iframe id='appiframe' src='" + appid + "' style='display: none;'></iframe>");
+
+        } else if (ostype == null || ostype == "") {
+
+            window.phone.startWebActivity(appid);
+
+        }
+
+    }
+
+
+    $(document).ready(function () {
+        $("#open-clicks2").click(function () {
+            $(".inv-new-page").css({ display: "table" });
+        });
+        $("#close-clicks2").click(function () {
+            $(".inv-new-page").css({ display: "none" });
+        });
+    });
+
 </script>
+
+
+
+
+
+
 
 
          
@@ -883,7 +1099,7 @@ width:5.5rem;
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Safari (IPhone)","requestId":"803b43411036408ab7b2917b56b6d0c6"}
+    {"appName":"Safari (IPhone)","requestId":"5d7a88923a3f43be896c793eb80471ee"}
 </script>
 <script type="text/javascript" src="http://localhost:32951/8ef7c7126cac465eb8a84f09854a3245/browserLink" async="async"></script>
 <!-- End Browser Link -->
