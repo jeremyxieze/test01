@@ -1,1108 +1,437 @@
-
 <!DOCTYPE html>
-<html>
-<head> 
-    <meta charset="utf-8" />
- 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>喝奶粉还能赚钱？！飞鹤宝妈豪豪哒！ - 飞鹤</title>
-    <meta name="Keywords">
-    <meta name="Description">   
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="dns-prefetch" href="//i.feihe.com" />
-    <link rel="dns-prefetch" href="//p.feihe.com" />
-    <link rel="dns-prefetch" href="//i0.feiheimg.com" />
-    <link rel="dns-prefetch" href="//i1.feiheimg.com" />
-    <link rel="dns-prefetch" href="//i2.feiheimg.com" />
-    <link rel="dns-prefetch" href="//i3.feiheimg.com" />
-    <link rel="dns-prefetch" href="//p0.feiheimg.com" />
-    <link rel="dns-prefetch" href="//p1.feiheimg.com" />
-    <link rel="dns-prefetch" href="//p2.feiheimg.com" />
-    <link rel="dns-prefetch" href="//p3.feiheimg.com" />
-    <link rel="dns-prefetch" href="//j0.feiheimg.com" />
-    <link rel="dns-prefetch" href="//j1.feiheimg.com" />
-    <link rel="dns-prefetch" href="//j2.feiheimg.com" />
-    <link rel="dns-prefetch" href="//j3.feiheimg.com" />
-    <link rel="dns-prefetch" href="//c0.feiheimg.com" />
-    <link rel="dns-prefetch" href="//c1.feiheimg.com" />
-    <link rel="dns-prefetch" href="//c2.feiheimg.com" />  
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ttt5</title>
+	<script src="http://j0.feiheimg.com/?p=plus/1.0.0/jquery-1.10.2.min.js"></script>
+	<script src="http://j3.feiheimg.com/m/js/1.0.0/fh.global.js"></script>
+	 <link rel="stylesheet" href="http://c2.feiheimg.com/?p=web/css/1.0.0/global.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
 
-    <link href="http://c1.feiheimg.com/?p=m/css/1.0.1/global.css&id=2016041802" rel="stylesheet">
-    
-    <script src="http://j3.feiheimg.com/?p=plus/1.0.0/jquery-1.10.2.min.js,plus/1.0.0/jquery.cookie.min.js,plus/1.0.0/jquery.lazyload.min.js,plus/1.0.0/touchslider.min.js,plus/1.0.0/jquery.easytemplate.js,global/js/1.0.0/fh.toploginmsg.js,m/js/1.0.0/maparea_resize.js,m/js/1.0.0/fh.global.js&id=2016032212"></script>
-
-
-
-    
-    <!--<script src="http://www.feihe.com/static/plus/jquery-1.10.2.min.js"></script>  
-    <script src="http://www.feihe.com/static/plus/jquery.cookie.min.js"></script> 
-    <script src="http://www.feihe.com/static/plus/jquery.lazyload.min.js"></script>
-    <script src="~/m/js/fh.global.js"></script>-->
- 
-    
-
-
-<script src="http://j2.feiheimg.com/?p=global/js/1.0.0/fh.validate.js,plus/1.0.0/jweixin-1.0.0.js&id=2016041301"></script>
-
-
-<link href="/m/css/appmgm.css?id=1" rel="stylesheet" type="text/css" />
-    
-    
- 
-    <script type="text/javascript">
-        var siteid = "2";
-        (function () {
-            var obj = document.createElement('script');
-            obj.src = '//trace.feihe.com/c.js?v=1';
-            obj.async = true;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(obj, s);
-        })();
-    </script>
-    
-    <style>
-    
-    	/*妈妈推荐妈妈老用户*/
-.shareOld{
-    width:100%;
-    background:#13b1f8;
+	
+<style>
+ul {list-style: none;margin:0; padding:0;}
+a{ text-decoration:none;} 
+p{
+	margin:0;
+	padding:0;
 }
-.shareOld .shareRule,.shareOld .mgmTime{
-    width:100%;
-    position:relative;
-}
-.shareOld .shareRule img,.shareOld .mgmTime img{
-    display:block;
-    width:100%;
-}
-.shareOld .shareRule a{
-    display:block;
-    font-size:0.3rem;
-    color:#fff;
-    background:url(http://i0.feiheimg.com/img/m/mgm/ruleIcon.png) no-repeat right center;
-    background-size:0.14rem 0.26rem;
-    position:absolute;
-    top:0.24rem;
-    right:0.6rem;
-    padding-right:0.25rem;
-
-}
-.shareOld .mgmTime i{
-    position:absolute;
-    bottom:0.1rem;
-    right:0.55rem;
-    font-size:0.2rem;
-    line-height:0.2rem;
-    color:#4e4e4e;
-}
-.shareOld .oldCon{
-    margin:0 0.4rem;
-    padding-top:0.6rem;
-}
-.shareOld .oldCon .oldTitel{
-    border-left:0.03rem solid #fff;
-    overflow:hidden;
-    height:0.3rem;
-    font-size:0.3rem;
-    line-height:0.3rem;
-    padding-left:0.13rem;
-    margin-bottom:0.3rem;
-    color:#fff;
-}
-.shareOld .oldCon .oldTitel .lookGift{
-    float:right;
-    color:#ff3c04;
-    font-size:0.3rem;
-    background:url(http://i1.feiheimg.com/img/m/mgm/giftIcon.png) no-repeat right center;
-    background-size:0.14rem 0.27rem;
-    padding-right:0.25rem;
-}
-.giftList{
-    overflow:hidden;
-    margin-bottom:0.44rem;
-}
-.giftList li{
-    height:1.15rem;
-    float:left;
-    width:2.7rem;
-    background:url(http://i1.feiheimg.com/img/m/mgm/giftListIcon.jpg),url(http://i1.feiheimg.com/img/m/mgm/giftListIcon1.jpg),#5fceff;
-    background-repeat:repeat-x,repeat-x,no-repeat;
-    background-size:0.265rem auto,0.265rem auto,100%;
-    background-position:left top,left bottom,center center;
-    padding-top:0.35rem;
-    display:block;
-    text-align:center;
-}
-.giftList li:first-child{
-    margin-right:0.18rem;
-}
-.giftList li em,.giftList li i{
-    display:inline-block;
-    vertical-align:middle;
-}
-.giftList li em{
-    font-size:0.5rem;
-    line-height:0.3rem;
-    color:#0080b9;
-    font-weight:bold;
-    height:0.36rem;
-}
-.giftList li i{
-    font-size:0.28rem;
-    line-height:0.36rem;
-    color:#fff;
-    font-weight:normal;
-    height:0.36rem;
-}
-.giftList li span{
-    display:block;
-    margin:0 0.15rem;
-    background:#0080b9;
-    color:#5fceff;
-    height:0.3rem;
-    line-height:0.3rem;
-    text-align:center;
-    font-size:0.2rem;
-    border-radius:0.05rem;
-    margin-top:0.1rem;
-}
-.giftMoney{
-    width:100%;
-    background:#fff;
-    border-radius:0.1rem;
-    height:1.4rem;
-    padding:0.1rem 0;
-    overflow:hidden;
-    margin-bottom:0.35rem;
-}
-.giftMoney li{
-    width:50%;
-    height:1.4rem;
-    padding:0.17rem 0;
-    text-align:center;
-    font-size:0.22rem;
-    color:#222;
-    line-height:0.22rem;
-    border-right:1px dashed #ffc8c8;
-    box-sizing:border-box;
-    float:left;
-}
-.giftMoney li:last-child{
-    border-right:1px dashed #fff;
-}
-.giftMoney li img{
-    display:block;
-    margin:0 auto;
-    margin-top:0.2rem;
-}
-.giftMoney li:first-child img{
-    width:0.99rem;
-    height:.7rem;
-}
-.giftMoney li:last-child img{
-    width:1.22rem;
-    height:.7rem;
-}
-.giftText{
-    margin-bottom:0.24rem;
-    font-size:0.25rem;
-    line-height:0.3rem;
-    height:0.3rem;
-    text-align:center;
-}
-.giftText i{
-    color:#ffec94;
-    text-decoration:underline;
-}
-.shareBtn{
-    height:0.76rem;
-    text-align:center;
-    display:block;
-    width:100%;
-    background:#ffab00;
-    box-shadow:0 0.04rem 0 #b06b00;
-    border:none;
-    font-size:0.34rem;
-    color:#fff;
-    border-radius:0.1rem;
-    margin-bottom:0.36rem;
-}
-.shopBtn{
-    height:0.76rem;
-    text-align:center;
-    display:block;
-    width:100%;
-    background:#6dd5ff;
-    box-shadow:0 0.04rem 0 #0080b9;
-    border:none;
-    font-size:0.34rem;
-    color:#fff;
-    border-radius:0.1rem;
-    margin-bottom:0.5rem;
-}
-/*大家都在领*/
-.getTitle{
-    color:#ffec94;
-    font-size:0.3rem;
-    line-height:0.3rem;
-    text-align:center;
-    display:block;
-    background:url(http://i0.feiheimg.com/img/m/mgm0406/titleBg.png) repeat-x center center;
-    margin:0 auto;
-    margin-bottom:0.4rem;
-}
-.getTitle i{
-    display:block;
-    width:2.12rem;
-    margin:0 auto;
-    line-height:0.3rem;
-    background:#13b1f8 ;
-    letter-spacing:0.1rem;
-}
-.getTitle i span{
-    margin-right:-0.1rem
-}
-.allGet ul{
-    display:block;
-    margin:0 auto;
-    padding-bottom:0.5rem
-}
-.allGet ul li{
-    height:0.64rem;
-    font-size:0.28rem;
-    margin-bottom:0.2rem;
-    width:100%;
-    display:flexbox;
-    display:box;
-    display:-moz-box;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:-o-box;
-}
-.allGet ul li span{
-    display:block;
-}
-.allGet ul li .uesrName{
-    display:block;
-    line-height:0.64rem;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-     flex:3;
-    -moz-box-flex:3;
-    -webkit-box-flex:3;
-    -ms-box-flex:3;
-    -o-box-flex:3;
-    -ms-flex:3;
-    box-flex:3;
-    min-width:2.5rem;
-}
-.allGet ul li .uesrName img{
-    border-radius:0.64rem;
-    width:0.64rem;
-    height:0.64rem;
-    display:block;
-    margin-right:0.18rem;
-    float:left;
-}
-.allGet ul li .uesrGet{
-    display:block;
-    line-height:0.64rem;
-    color:#fff;
-     flex:2;
-    -moz-box-flex:2;
-    -webkit-box-flex:2;
-    -ms-box-flex:2;
-    -o-box-flex:2;
-    -ms-flex:2;
-    box-flex:2;
-    min-width:2rem;
-}
-.allGet ul li .userUse{
-    display:block;
-    line-height:0.64rem;
-    color:#ff4444;
-     flex:1;
-    -moz-box-flex:1;
-    -webkit-box-flex:1;
-    -ms-box-flex:1;
-    -o-box-flex:1;
-    -ms-flex:1;
-    box-flex:1;
-    min-width:1.5rem;
-}
-.allGet ul li .userUsed{
-    color:#fff;
+body{
+	background-color:#fff;
+	font-size:0.12rem;
+	font-family:"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+	-webkit-font-smoothing:antialiased;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
 }
 
-
-
-
-
-
-/*活动规则*/
-  .inv-new-page{
-display:none;
-	background:rgba(0,0,0,0.8);
-	position:fixed;
+.list-page{
+	background:#fff;
 	width:100%;
-	z-index:99999;
-    top:0rem;
-    left:0;
-    margin:0 auto;
-    height:100%;
-}
-.inv-span{
-    display:table-cell;
-    vertical-align:middle;
-}
-.inv-new-into{
-   
-	clear:both;
-	margin-left:0.25rem;
-	margin-right:0.25rem;
-	background:#ff364d;
-	padding:0.5rem 0.3rem;
-}
-.inv-new-page ul{
-
-}
-.inv-new-page li{
-	background:url(http://i0.feiheimg.com/img/m/mgm0406/new-li-style.png);
-	background-repeat:no-repeat;
-	background-size:0.1rem 0.1rem;
-	padding-left:0.3rem;
-	color:#fff;
-	background-position:left center;
-	font-size:0.18rem;
-	line-height:0.28rem;
-	margin-bottom:0.08rem;
-	margin-top:0.08rem;
-}
-.inv-new-page p{
-	color:#fff;
-}
-.inv-new-page span{
-	color:#ffec94;
-	font-size:0.25rem;
-	line-height:0.25rem;
-   display:block;
-   margin-top:0.05rem;
-   margin-bottom:0.05rem;
-}
-.inv-new-page a{
-	background:url(http://i1.feiheimg.com/img/m/mgm0406/off-button.png);
-	background-repeat:no-repeat;
-	background-size:100%;
-	height:0.28rem;
-	width:0.27rem;
-	display:block;
-	float:right;
-	margin-right:0.25rem;
-	margin-bottom:0.2rem;
-}
-#li-sty{
-	/*margin-top:0.1rem;*/
-}
-#li-sty li{
-		background:url(http://i2.feiheimg.com/img/m/mgm0406/new-li-style.png);
-	background-repeat:no-repeat;
-	background-size:0.1rem 0.1rem;
-	padding-left:0.3rem;
-	color:#fff;
-	background-position:left 0.1rem;
-	font-size:0.18rem;
-	line-height:0.24rem;
-	margin-bottom:0.0rem;
-}
-#close-clicks{
-	
-}  
-/*新弹出框end*/
-
-
-/*NEW弹框*/
-  .inv-new-page-s{
-display:none;
-	background:rgba(0,0,0,0.8);
-	position:fixed;
-	width:100%;
-	z-index:99999;
-    top:0rem;
-    left:0;
-    margin:0 auto;
-    height:100%;
-}
-.inv-span-s{
-    display:table-cell;
-    vertical-align:middle;
-}
-.inv-new-into-s{
-   
-	clear:both;
-	margin-left:0.25rem;
-	margin-right:0.25rem;
-	background:#ff364d;
-	padding:0.5rem 0.3rem;
-}
-.inv-new-page-s ul{
-
-}
-.inv-new-page-s li{
-	background:url(http://i0.feiheimg.com/img/m/mgm0406/new-li-style.png);
-	background-repeat:no-repeat;
-	background-size:0.1rem 0.1rem;
-	padding-left:0.3rem;
-	color:#fff;
-	background-position:left center;
-	font-size:0.24rem;
-	line-height:0.35rem;
-	margin-bottom:0.2rem;
-	margin-top:0.15rem;
-}
-.inv-new-page-s p{
-	color:#fff;
-}
-.inv-new-page-s span{
-	color:#ffec94;
-	font-size:0.30rem;
-	line-height:0.30rem;
-}
-.inv-new-page-s a{
-	background:url(http://i1.feiheimg.com/img/m/mgm0406/off-button.png);
-	background-repeat:no-repeat;
-	background-size:100%;
-	height:0.28rem;
-	width:0.27rem;
-	display:block;
-	float:right;
-	margin-right:0.25rem;
-	margin-bottom:0.2rem;
-}
-#li-sty-s{
-	margin-top:0.1rem;
-}
-#li-sty-s li{
-		background:url(http://i2.feiheimg.com/img/m/mgm0406/new-li-style.png);
-	background-repeat:no-repeat;
-	background-size:0.1rem 0.1rem;
-	padding-left:0.3rem;
-	color:#fff;
-	background-position:left 0.1rem;
-	font-size:0.24rem;
-	line-height:0.35rem;
-	margin-bottom:0.0rem;
-}
-#close-clicks-s{
-	
-}  
-
-/*end*/
-
-/*请在微信打开的提示*/
-.openDialog{
-    width:100%;
-    height:100%;
-    min-height:100%;
-    background:rgba(0,0,0,0.7);
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:100861;
-    display:table;
-}
-.openDialog > span{
-    display:table-cell;
-    height:100%;
-    line-height:100%;
-    width:100%;
-    vertical-align:middle;
-    color:#e1e1e1;
-    font-size:0.24rem;
-    line-height:0.32rem;
-    color:#fff;
-    font-size:0.26rem
-}
-.openDialog > span span {
-    display:table;
-    height:0.2rem;
-    margin:0 auto;
-    padding:0.5rem 0.12rem;
-    border:1px dashed #fff;
-    border-radius:0.05rem;
-}
-.openDialog > span span i{
-    display:block;
-    padding-left:0.5rem;
-    margin-bottom:0.23rem;
-    background:url(http://i.feihe.com/img/m/mgm/waringDig.png) no-repeat left top;
-    background-size:0.3rem 0.3rem;
-}
-
-
-/*MGM改版*/
-
-.mgmSn{
-	width:6.4rem;
 	margin:0 auto;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
 }
-.mgmSn-fs{
-	background:url(http://i1.feiheimg.com/img/m/mgm/NmgmRec_01.png);
-	background-size:100% 0.95rem;
-	background-repeat:no-repeat;
-	height:0.95rem;
-	text-align:right;
-}
-
-.mgmSn-se{
-	background:url(http://i2.feiheimg.com/img/m/mgm/NmgmRec_02.png);
-	background-size:100% 1.42rem;
-	background-repeat:no-repeat;
-	height:1.42rem;
-}
-.mgmSn-th{
-	background:url(http://i3.feiheimg.com/img/m/mgm/NmgmRec_03.png);
-	background-size:100% 1.28rem;
-	background-repeat:no-repeat;
-	height:1.28rem;
-	text-align:right;
-}
-.mgmSn-th span{
-	font-size:0.17rem;
-	line-height:1.8rem;
-	color:#4e4e4e;
-	margin-right:0.45rem;
-	
-}
-.Sntest{
-	width:1.17rem;
-	height:1.17rem;
-    -moz-border-radius:1.1rem;
-	-webkit-border-radius:1.1rem;
-	border-radius:1.1rem;
-   overflow:hidden;
-   display:table;
-    margin:0 auto;
-	
-}
-/*.Snimg{
-   width:0.9rem;
-   height:0.9rem;
-   -moz-border-radius:1.1rem;
-	-webkit-border-radius:1.1rem;
-	border-radius:1.1rem;
-   border:0.04rem solid #1c8ec1;
-   display:table;
-    margin:0 auto;
-
-}*/
-.SnCen{
-	background:#13b1f8;
-	overflow:hidden;
-	padding:0rem 0.46rem;
-}
-.Snsanjiao{
-	width:5.49rem;
-	height:0.24rem;
+.nav-l{
 	display:block;
-	margin:0 auto;
 	
-	padding-top:0.08rem;
-}
-.SnCon{
-	font-size:0.25rem;
-	line-height:0.32rem;
-	color:#ffffff;
-	background:#0080b9;
-	padding:0.42rem 0.33rem;
-	margin-left:0.29rem;
-	margin-right:0.29rem;
-	text-indent:0.5rem;
-	-moz-border-radius:0.1rem;
-  -webkit-border-radius:0.1rem; 
-  border-radius:0.1rem; 
-
-}
-.SnLast{
-	padding-bottom:1.4rem;
-	display:table;
-	margin:0 auto;
-}
-.SnInput{
-	font-size:0.3rem;
-	line-height:0.7rem;
-	color:#fff;
-	border:none;
-	cursor:pointer;
-	background:#ffaa00;
-	width:5.49rem;
-	text-align:center;
-	-moz-border-radius:0.1rem;
-	-webkit-border-radius:0.1rem;
-	border-radius:0.1rem;
-	margin-top:0.53rem;
-	box-shadow:0rem 0.04rem 0rem #b06b00;
-	-moz-box-shadow:0rem 0.04rem 0rem #b06b00;
-	-webkit-box-shadow:0rem 0.04rem 0rem #b06b00;
-}
-
-
-
-
-
-
-
-
-
-
-
-.wrap,html,body{
-    width:100%;
-    height:100%;
-    min-height:100%;
-}
-.mgmRec{
-	width:6.4rem !important;
-	margin:0 auto !important;
-    background:#13b1f8;
-    height:100%;
-    min-height:100%;
-}
-.mgmRec-fs{
-	background:url(http://i0.feiheimg.com/img/m/mgm/NmgmRec_01.png);
-	background-size:6.4rem 0.95rem;
-	background-repeat:no-repeat;
-	height:0.95rem;
-	text-align:right;
-}
-.mgmRec-fs a{
-	font-size:0.3rem;
-	line-height:0.8rem;
-	background:url(http://i1.feiheimg.com/img/m/mgm/ora-r.png);
-	background-size:0.13rem 0.23rem;
-	background-repeat:no-repeat;
-	background-position:right center;
-	padding-right:0.21rem;
-	color:#ffffff;
-	margin-right:0.45rem;
-}
-.mgmRec-se{
-	background:url(http://i2.feiheimg.com/img/m/mgm/NmgmRec_02.png);
-	background-size:6.4rem 1.42rem;
-	background-repeat:no-repeat;
-	height:1.42rem;
-}
-.mgmRec-th{
-	background:url(http://i3.feiheimg.com/img/m/mgm/NmgmRec_03.png);
-	background-size:6.4rem 1.28rem;
-	background-repeat:no-repeat;
-	height:1.28rem;
-	text-align:right;
-}
-.mgmRec-th span{
-	font-size:0.17rem;
-	line-height:1.8rem;
-	color:#4e4e4e;
-	margin-right:0.45rem;
+	-moz-box-flex:0;
+	-webkit-box-flex:0;
+	-ms-flex:0;
+	box-flex:0;
 	
 }
-.RecCen{
-	padding:0rem 0.45rem;
-	background:#13b1f8;
-	overflow:hidden;
-    padding-bottom:0.5rem;
+.content-r{
+	display:block;
+	-moz-box-flex:8;
+	-ms-flex:8;
+	-webkit-box-flex:8;
+	box-flex:8;
+	display:block;
+	
 }
-.Rec-span span{
-	font-size:0.25rem;
-	line-height:0.25rem;
-	color:#ccefff;
-	font-weight:bold;
+.content-r li{
+	height:1.86rem;
+	padding-left:0.42rem;
 }
-.Rec-span a{
-	color:#ff4900;
-	font-size:0.25rem;
-	line-height:0.25rem;
-	background:url(http://i0.feiheimg.com/img/m/mgm/whi-r.png);
-	background-size:0.14rem 0.26rem;
-	background-repeat:no-repeat;
-	background-position:right center;
-	padding-right:0.21rem;
-	float:right;
-	font-weight:bold;
-}
-.Rec-span{
-	padding-top:0.25rem;
-}
-.RecCon{
-	padding-top:0.37rem;
-}
-.RecConFs{
+.pro-img{
+	height:1.86rem;
 	float:left;
-	background:url(http://i1.feiheimg.com/img/m/mgm/blue-bg.png);
-	background-size:2.65rem 2.3rem;
-	background-repeat:no-repeat;
-	height:1.9rem;
-	width:2.65rem;
-	text-align:center;
-	padding-top:0.4rem;
+	padding-top:0.3rem;
+	box-sizing:border-box;
 }
-.RecConFs i{
-	color:#ff4444;
+.pro-info{
+	height:1.86rem;
+	padding-top:0.3rem;
+	box-sizing:border-box;
+	float:left;
 }
-.RecConFs em{
-	color:#ffffff;
-}
-.RecConFs b{
-	font-size:0.24rem !important;
-    line-height:0.24rem !important;
-}
-.RecConFs p{
-	background:url(http://i2.feiheimg.com/img/m/mgm/red-xin.png);
-	background-size:1.34rem 0.86rem;
-	height:0.86rem;
-	width:1.34rem;
-	background-repeat:no-repeat;
-	text-align:center;
-	 font-size:0.3rem;
-	 line-height:0.9rem;
-	 color:#ffd56f;
-	 margin:0 auto;
-      -moz-text-shadow:0rem 0.04rem 0rem #ce1628;
- -webkit-text-shadow:0rem 0.04rem 0rem #ce1628;
- text-shadow:0rem 0.04rem 0rem #ce1628;
-	 
-}
-.RecConFs span{
-	font-size:0.2rem;
-	line-height:0.26rem;
-	display:inline-block;
-	margin-top:0.24rem;
-    width:2.4rem;
-}
-.RecConSe{
-	float:right;
-	padding-top:0.4rem;
-	background:url(http://i3.feiheimg.com/img/m/mgm/blue-bg.png);
-	background-size:2.65rem 2.3rem;
-	background-repeat:no-repeat;
-	height:1.9rem;
-	width:2.65rem;
-	text-align:center;
-}
-.RecConSe img{
-	display:block;
-	margin:0 auto;
-	width:0.81rem;
-	height:0.9rem;
-}
-.RecConSe span{
-	font-size:0.24rem;
-	line-height:0.24rem;
-	color:#000000;
-	display:inline-block;
-	margin-top:0.18rem;
-}
-.RecConSe i{
-	font-size:0.19rem;
-	line-height:0.19rem;
-	color:#000000;
-	display:block;
-	margin-top:0.1rem;
-}
-.RecBut{
-	clear:both;
+.pro-img img{
+	width:1.15rem;
+	height:1.2rem;
 	
 }
-.RecBut input{
-clear:both;
-margin-top:0.6rem;
-width:5.5rem;
-	font-size:0.34rem;
-	line-height:0.7rem;
-	color:#ffffff;
-	background:#ffab00;
-	text-align:center;
-	-moz-border-radius:0.1rem;
-  -webkit-border-radius: 0.1rem;
-  border-radius:0.1rem;
-  border:none;
-  cursor:pointer;
-  box-shadow:0rem 0.04rem 0rem #b06b00;
-	-moz-box-shadow:0rem 0.04rem 0rem #b06b00;
-	-webkit-box-shadow:0rem 0.04rem 0rem #b06b00;
-	}
-
-
-
-
-.inv-new-pagee1{
-    display:none;
-    background:rgba(0,0,0,0.8);
-    position:fixed;
-    width:100%;
-    z-index:99999;
-    top:0rem;
-    left:0;
-    margin:0 auto;
-    height:100%;
+.content-r{
+	float:right;
+	
 }
-.invs-span1{
-    display:table-cell;
-    vertical-align:middle;
+.pro-info span{
+	font-size:0.25rem;
+	line-height:0.25rem;
+	color:#222222;
+	margin-top:0.15rem;
+	display:block;
 }
-.inv-new-pagee1 a{
-    background:url(http://i1.feiheimg.com/img/m/mgm0406/off-button.png);
-    background-repeat:no-repeat;
-    background-size:100%;
-    height:0.28rem;
-    width:0.27rem;
-    display:block;
-    float:right;
-    margin-right:0.25rem;
-    margin-bottom:0.2rem;
+.pro-info p{
+	font-size:0.25rem;
+	line-height:0.3rem;
+	color:#222222;
+	font-weight:bold;
+	margin-bottom:0.2rem;
 }
-.inv-new-intoo1{
-    clear:both;
-    margin-left:0.25rem;
-    margin-right:0.25rem;
-    background:#ff364d;
-    padding:0.4rem 0.3rem;
+.pro-info i{
+	font-size:0.23rem;
+	line-height:0.23rem;
+	color:#f15959;
 }
-.inv-new-pagee1 span{
-    color:#ffec94;
-    font-size:0.25rem;
-    line-height:0.25rem;
+.pro-info s{
+	font-size:0.15rem;
+	line-height:0.15rem;
+	color:#999999;
+	margin-left:0.1rem;
 }
-.inv-new-pagee1 li{
-    background:url(http://i0.feiheimg.com/img/m/mgm0406/new-li-style.png);
-    background-repeat:no-repeat;
-    background-size:0.1rem 0.1rem;
-    padding-left:0.3rem;
-    color:#fff;
-    background-position:left center;
-    font-size:0.2rem;
-    line-height:0.28rem;
-    margin-bottom:0.08rem;
-    margin-top:0.08rem;
+.nav-l li{
+	font-size:0.29rem;
+	line-height:0.29rem;
+	color:#222222;
+	border-bottom:1px solid #f1f1f1;
+	
+	padding:0.32rem 0.25rem;
+	border-right:0.08rem solid #f2f2f2;
 }
-
-.shareDia{
-    width:100%;
-    height:100%;
-    min-height:100%;
-    background:rgba(0,0,0,0.8);
-    position:fixed;
-    left:0;
-    top:0;
-    z-index:10086;
-    display:table;
+.content-r li{ 
+	border-bottom:1px solid #f5f5f5;
+	position:relative;
 }
-
-.shareDia > div{
-    width:100%;
-    display:table-cell;
-    vertical-align:middle;
+.more-info{
+	position:absolute;
+	width:0.52rem;
+	height:0.52rem;
+	right:0.22rem;
+	bottom:0.22rem;
 }
-.AppSOld{
-    width:100% !important;
-    background:#fff;
-    overflow:hidden;
+.nav-bar-img-hot{
+	background:url(ico0811-1.png);
+	background-repeat:no-repeat;
+	background-size:0.46rem 0.28rem;
+	background-position:right center;
+	padding-right:0.46rem;
 }
-.OldHead{
-    height:0.92rem;
-    width:100% !important;
-    box-sizing:border-box;
-    padding-left:0.4rem;
-    border-bottom:1px solid #d7d7d7;
-    background:#fff;
-   
+.nav-bar-img-xff{
+	background:url(ico0811-2.png);
+	background-repeat:no-repeat;
+	background-size:0.35rem 0.28rem;
+	background-position:right center;
+	padding-right:0.38rem;
 }
-.OldHead span{
-     font-size:0.26rem;
-    color:#222222;
-    line-height:0.9rem;
+.show-border{
+	border-right:0.08rem solid #fff !important;
 }
-.OldCenter{
-    width:100% !important;
-    background:#fff;
-    height:2.9rem;
+.hide-border{
+	
 }
-.OldCenter li{
-    float:left;
-    width:50%;
-    height:2.9rem;
-    position:relative;
-    text-align:center;
-    padding-top:0.58rem;
-    border-bottom:1px solid #d7d7d7;
-    box-sizing:border-box;
-}
-.OldCenter li img {
-    height:1.19rem;
-    width:1.19rem;
-    display:block;
-    margin:0 auto;
-    
-}
-.OldCenter li span {
-    font-size:0.26rem;
-    color:#222222;
-    padding-top:0.29rem;
-    display:block;
-     
-}
-.OldFoot{
-    display:block;
-    clear:both;
-    height:1rem;
-    width:100%;
-    text-align:center;
-    background:#fff;
-}
-
-.OldFoot span{
-    font-size:0.32rem;
-    color:#222222;
-     line-height:1rem;
-}
-    </style>
+</style>
 </head>
-<script>
-    var IsMobile = 1;
-    $(function () {
-        $("img[data-original]").lazyload({ threshold: 500, effect: "fadeIn" });
-    }) 
-</script>
 <body>
-    <section class="wrap"> 
+	<div class="list-page" >
+		<div class="nav-l" style="background:url(asd2.png);background-repeat:no-repeat;background-size:0.08rem 100%;background-position:1.84rem 0rem;position:relative;z-index:10086;">
+		
+			<ul class="ts">
+				<li ><span class="nav-bar-img-hot">热销榜</span></li>
+				<li ><span class="nav-bar-img-xff">星飞帆</span></li>
+				<li ><span>超级飞帆</span></li>
+				<li><span>星阶优护</span></li>
+				<li><span>飞帆</span></li>
+				<li><span>舒贝诺</span></li>
+				<li style=""><p style="visibility:hidden">sdfsdsdf</p></li>
+				
+				
+			</ul>
+		</div>
+		
+		<div class="content-r">
+			<ul>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>11111111111111</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+			</ul>
+		</div>
+		<div class="content-r" style="display:none;">
+			<ul>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 2222222段 700g</span>
+						<p>2222222222222</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+			</ul>
+		</div>
+		<div class="content-r" style="display:none;">
+			<ul>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 333333段 700g</span>
+						<p>333333333333333</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+				<li>
+					<em class="pro-img"><img src="http://p3.feiheimg.com//n12/tfs/2016/07/12/ItemProImg/21f239a8-3e86-486d-b8a4-be7969caf6d8.jpg_400x400.jpg"></em>
+					<em class="pro-info">
+						<span>星飞帆 3段 700g</span>
+						<p>测试测试测试测试</p>
+						<i>￥ 277.00<s>￥ 308.00</s></i>
+					</em>
+					<img class="more-info" src="ico0811-3.png" />
+				</li>
+			</ul>
+		</div>
+	</div>
 
-        
 
-
-<div class="inv-new-page" style="display:none;">
-    <a href="javascript:void(0)" id="close-clicks2"></a>
-    <div class="inv-new-into">
-        <span>活动时间</span>
-        <ul>
-            <li>2016年5月30日-2016年6月30日。</li>
-        </ul>
-        <span>新客户专享礼包规则</span>
-        <ul id="li-sty">
-            <li>
-                530元红包礼券:300元（满2000可用）、150元（满1000可用）、50元（满400可用）和30元（无消费限制）各一张；
-                礼券有效期：指定活动期间内有效；
-            </li>
-           <li>超高端奶粉“星飞帆”小听装130g（3段）将随同活动期间内（2016年5月30日-2016年6月30日）第一笔订单发出；</li>
-            <li>仅限飞鹤官网新用户享受。同一个手机号、微信号、支付账户、银行卡号，设备号均视为一个用户。</li>
-        </ul>
-        <span>推荐返现规则</span>
-        <ul>
-            <li>指定活动期间内完成推荐，被推荐人在飞鹤官网成功下单购买，推荐人可获得每笔订单金额10%的现金返利；</li>
-            <li>对于被推荐人首次购买日起的一年内所有有效购买订单，推荐人都可以获得10%现金返利；不限推荐人数；现金奖励可累加、无上限，现金返利金额永久有效；</li>
-            <li>返利金额将于订单出库后的30天内到账（限无退货订单）；</li>
-            <li>指定活动期间内成功完成首笔推荐，将额外获得手机话费奖励；
-被推荐人首次订单金额大于等于1000元，推荐人可获200元手机话费奖励；
-被推荐人首次订单金额小于1000元，推荐人可获50元手机话费奖励；
-</li>
-            <li>话费奖励只针对成功推荐的首笔订单；</li>
-            <li>话费奖励发放时间：被推荐人首次订单出库的30天后（无退换货），话费将于5天内充值到推荐人手机账户。</li>
-            <li>非正常途径获得的现金奖励无效，飞鹤官方商城保留最终解释权； </li>
-            <li>其他问题，请联系飞鹤微信客服，搜索微信官方服务号【飞鹤官方商城】</li>
-        </ul>
-    </div>
-
-</div>
-
-
-<div class="mgmRec">
-    <div class="mgmRec-fs"><a href="javascript:void(0);" id="open-clicks2">活动规则</a></div>
-    <div class="mgmRec-se"></div>
-    <div class="mgmRec-th"><span>活动时间:2016.5.30-2016.6.30</span></div>
-    <div class="RecCen">
-        <div class="Rec-span"><span>新会员奖励</span><a id="divsee" href="javascript:void(0);" onclick="openapp('type=18||')">立即查看</a></div>
-        <div class="RecCon">
-            <div class="RecConFs">
-                <p>￥530</p>
-                <span><b>恭喜您<i>530</i>元红包加入</b>您的<em>138*****000</em>账户</span>
-            </div>
-            <div class="RecConSe">
-                <img src="http://i2.feiheimg.com/img/m/mgm/xff-test.png">
-                <span>星飞帆体验装</span>
-                <i>将随您的第一份订单发出！</i>
-            </div>
-            <div class="RecBut">
-                <input type="submit" value="立即购买" onclick="openapp('type=2||classid=88')"  />
-            </div>
-        </div>
-    </div>
-</div>
 <script>
-    $(function () {
-        $(".openDialog").click(function () {
-            window.history.go(-1);
-        });
-        $("#open-clicks").bind("click", function () {
-            $(".inv-new-page").css({ display: "" });
-        });
-        $("#close-clicks").bind("click", function () {
-            $(".inv-new-page").css({ display: "none" });
-        });
-    });
-    function getQueryString(name) {
-
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-
-        var r = window.location.search.substr(1).match(reg);
-
-        if (r != null) return unescape(r[2]); return null;
-
-    }
-
-    function openapp(appid) {
-        var ostype = getQueryString("ostype");
-        if (ostype == "1") {
-            appid = "md://iphoneapp?" + appid;
-
-            $("body").append("<iframe id='appiframe' src='" + appid + "' style='display: none;'></iframe>");
-
-        } else if (ostype == null || ostype == "") {
-
-            window.phone.startWebActivity(appid);
-
-        }
-
-    }
-
-
-    $(document).ready(function () {
-        $("#open-clicks2").click(function () {
-            $(".inv-new-page").css({ display: "table" });
-        });
-        $("#close-clicks2").click(function () {
-            $(".inv-new-page").css({ display: "none" });
-        });
-    });
-
+	$(function(){
+		$(".nav-l ul li").click(function(){
+			$(this).each(function(index,element){
+				$(".content-r").eq($(".nav-l ul li").index(this)).show().siblings().hide();
+				
+				$(".nav-l").show();
+				$(element).addClass("show-border").siblings().removeClass("show-border");
+				
+			});
+		});
+	});
 </script>
-
-
-
-
-
-
-
-
-         
-    
-          
-</section>
-
-<!-- Visual Studio Browser Link -->
-<script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Safari (IPhone)","requestId":"5d7a88923a3f43be896c793eb80471ee"}
-</script>
-<script type="text/javascript" src="http://localhost:32951/8ef7c7126cac465eb8a84f09854a3245/browserLink" async="async"></script>
-<!-- End Browser Link -->
-
 </body>
 </html>
