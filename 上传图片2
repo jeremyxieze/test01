@@ -50,7 +50,7 @@
 	.z_file {
 		width: 1rem;
 		height: 1rem;
-		background: url(z_add.png) no-repeat;
+		background: url(https://raw.githubusercontent.com/jeremyxieze/test01/master/tank.png) no-repeat;
 		background-size: 100% 100%;
 		float: left;
 		margin-right: 0.2rem;
