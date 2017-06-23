@@ -172,7 +172,8 @@ body{
 		<!-- doc.addEventListener('DOMContentLoaded', recalc, false); -->
 	<!-- })(document, window); -->
 
-	function imgChange(obj1, obj2) {	
+	function imgChange(obj1, obj2) {
+		alert(123);
 		var $ = (sel) => document.querySelector(sel), textRange = null;
 		var edit = $('.textes'), btn = $('.btnes');	
 		//获取点击的文本框
