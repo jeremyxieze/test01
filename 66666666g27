@@ -143,7 +143,7 @@ body{
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
 				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />
-				<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onchange="imgChange('z_photo','z_file');" />
+				<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onclick="asddd();" />
 			</div>
 			<button>提交</button>
 		</div>
@@ -171,7 +171,9 @@ body{
 		<!-- win.addEventListener(resizeEvt, recalc, false); -->
 		<!-- doc.addEventListener('DOMContentLoaded', recalc, false); -->
 	<!-- })(document, window); -->
-
+function asddd(){
+	alert(2222);
+}
 	function imgChange(obj1, obj2) {
 		alert(123);
 		var $ = (sel) => document.querySelector(sel), textRange = null;
