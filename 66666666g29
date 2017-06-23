@@ -91,7 +91,7 @@ body{
 	display:block;
 	max-width:100%;
 }
-.z_file input#file{
+.z_file input{
 	display: block;
 	width: auto;
 	border: 0;
