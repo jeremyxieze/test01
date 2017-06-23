@@ -96,7 +96,7 @@ body{
 	width: auto;
 	border: 0;
 	vertical-align: middle;
-	cursor: pointer;
+	cursor:pointer;
 }
 .z_file input::-webkit-file-upload-button{
 		width:0.6rem;
@@ -105,7 +105,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor: pointer;
+		cursor:pointer;
 }
 .z_file input::-moz-file-upload-button{
 		width:0.6rem;
@@ -114,7 +114,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor: pointer;
+		cursor:pointer;
 }
 .z_file input::-o-file-upload-button{
 		width:0.6rem;
@@ -123,7 +123,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor: pointer;
+		cursor:pointer;
 }
 .z_file input::-ms-file-upload-button{
 		width:0.6rem;
@@ -132,7 +132,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor: pointer;
+		cursor:pointer;
 }
 
 
@@ -143,7 +143,7 @@ body{
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
 				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />
-				<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onclick="asddd();" />
+				<input type="text"  onclick="asddd();" />
 			</div>
 			<button>提交</button>
 		</div>
