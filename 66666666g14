@@ -185,12 +185,16 @@ body{
 			var imgUrl = window.URL.createObjectURL(file.files[i]);
 			console.log(imgUrl);
 			var asd=imgUrl.toString();
-	
+			<!-- console.log(img); -->
+			<!-- var imgAdd = document.createElement("div"); -->
+			<!-- imgAdd.setAttribute("class", "z_addImg"); -->
+			<!-- imgAdd.appendChild(img); -->
+			<!-- imgContainer.appendChild(imgAdd); -->
 			
-	
-
+			<!-- edit.onblur = function () { -->
+			  // var sel = window.getSelection();
 			 
-			
+			<!-- } -->
 			
 			//获取下标
 			textRange = window.getSelection().getRangeAt(0);
@@ -204,10 +208,30 @@ body{
 			
 			
 		};
-		
+		<!-- imgRemove(); -->
 	};
 
+	<!-- function imgRemove() { -->
+		<!-- var imgList = document.getElementsByClassName("z_addImg"); -->
+		<!-- var mask = document.getElementsByClassName("z_mask")[0]; -->
+		<!-- var cancel = document.getElementsByClassName("z_cancel")[0]; -->
+		<!-- var sure = document.getElementsByClassName("z_sure")[0]; -->
+		<!-- for (var j = 0; j < imgList.length; j++) { -->
+			<!-- imgList[j].index = j; -->
+			<!-- imgList[j].onclick = function() { -->
+				<!-- var t = this; -->
+				<!-- mask.style.display = "block"; -->
+				<!-- cancel.onclick = function() { -->
+					<!-- mask.style.display = "none"; -->
+				<!-- }; -->
+				<!-- sure.onclick = function() { -->
+					<!-- mask.style.display = "none"; -->
+					<!-- t.style.display = "none"; -->
+				<!-- }; -->
 
+			<!-- } -->
+		<!-- }; -->
+	<!-- }; -->
 
 </script>
 </body>
