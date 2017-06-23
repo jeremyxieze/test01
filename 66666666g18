@@ -138,7 +138,7 @@ body{
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
 				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />
-				<input type="file" name="file" id="file" value="" accept="image/*" multiple onchange="imgChange('z_photo','z_file');" />
+				<input type="file" name="file" id="file" value="" accept="image/*" multiple onclick="ddds();" />
 			</div>
 			<button>提交</button>
 		</div>
@@ -148,7 +148,9 @@ body{
 	</div>
 	
 <script type="text/javascript">
-		
+		function ddds(){
+			alert(22222);
+		}
 
 	function imgChange(obj1, obj2) {	
 		alert(111111111);
