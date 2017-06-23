@@ -96,6 +96,7 @@ body{
 	width: auto;
 	border: 0;
 	vertical-align: middle;
+	cursor: pointer;
 }
 .z_file input::-webkit-file-upload-button{
 		width:0.6rem;
