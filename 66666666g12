@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>评论</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://raw.githubusercontent.com/jeremyxieze/test01/master/fh.global.js"></script>
+
+	<link rel="stylesheet" href="http://raw.githubusercontent.com/jeremyxieze/test01/master/global.css" />
+    <link rel="stylesheet" href="http://raw.githubusercontent.com/jeremyxieze/test01/master/pullToRefresh.css"/>
+	<script src="http://raw.githubusercontent.com/jeremyxieze/test01/master/iscroll.js"></script>
+	<script src="http://raw.githubusercontent.com/jeremyxieze/test01/master/pullToRefresh.js"></script>
+
+	
+<style>
+ul {list-style: none;margin:0; padding:0;}
+a{ text-decoration:none;} 
+p{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#fff;
+	font-size:0.12rem;
+	font-family:"Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+	-webkit-font-smoothing:antialiased;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+.comments{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	background:#fff;
+	padding-bottom:0.9rem;
+	
+}
+.comments-top-button{
+	background:#fcfcfc;
+	height:1rem;
+	border-bottom:2px solid #f1f1f1;
+	padding:0rem 0.30rem;
+	box-sizing:border-box;
+}
+.comments-top-button img{
+	display:block;
+	width:0.40rem;
+	height:0.40rem;	
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+.upload-img{
+	float:left;
+	width:0.60rem;
+	height:0.60rem;
+	position:relative;
+	margin-top:0.19rem;
+}
+.comments-top-button button{
+	float:right;
+	width:1.08rem;
+	height:0.65rem;
+	font-size:0.22rem;
+	line-height:0.65rem;
+	color:#fff;
+	text-align:center;
+	background:#2196f3;
+	border-radius:0.10rem;
+	margin-top:0.15rem;
+}
+.comments-content{
+	box-sizing:border-box;
+	padding:0.20rem;
+}
+.comments-content div{
+	resize:none;
+	display:block;
+	width:100%;
+	font-size:0.2rem;
+	line-height:0.36rem;
+	min-height:3rem;
+	border:1px solid #f5f5f5;
+}
+.comments-content div img{
+	display:block;
+	max-width:100%;
+}
+.z_file input#file{
+	display: block;
+	width: auto;
+	border: 0;
+	vertical-align: middle;
+}
+.z_file input::-webkit-file-upload-button{
+		width:0.6rem;
+		height:0.6rem;
+		border:none;
+		position:absolute;
+		outline:0;
+		opacity:0;
+}
+.z_file input::-moz-file-upload-button{
+		width:0.6rem;
+		height:0.6rem;
+		border:none;
+		position:absolute;
+		outline:0;
+		opacity:0;
+}
+.z_file input::-o-file-upload-button{
+		width:0.6rem;
+		height:0.6rem;
+		border:none;
+		position:absolute;
+		outline:0;
+		opacity:0;
+}
+.z_file input::-ms-file-upload-button{
+		width:0.6rem;
+		height:0.6rem;
+		border:none;
+		position:absolute;
+		outline:0;
+		opacity:0;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="comments">
+		<div class="comments-top-button">
+			<div class="upload-img z_file btnes">
+				<img src="img/upload.jpg" />
+				<input type="file" name="file" id="file" value="" accept="image/*" multiple onchange="imgChange('z_photo','z_file');" />
+			</div>
+			<button>提交</button>
+		</div>
+		<div class="comments-content">
+			<div contentEditable="plaintext-only" class="textes">阿斯顿全文的方式地方临渴掘井企鹅了看见了就绿了斯蒂芬森浪蝶狂蜂聚少离多开房间下次V上的法律框架地方<img src="img/qiuzhang.png" />时代发生地方考虑下吃冰激凌上的风景味如嚼蜡看见了看见了的看法水电费收费的</div>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+	//px转换为rem
+	(function(doc, win) {
+		var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function() {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				if (clientWidth >= 640) {
+					docEl.style.fontSize = '100px';
+				} else {
+					docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+				}
+			};
+
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+
+	function imgChange(obj1, obj2) {	
+		var $ = (sel) => document.querySelector(sel), textRange = null;
+		var edit = $('.textes'), btn = $('.btnes');	
+		//获取点击的文本框
+		var file = document.getElementById("file");
+		//存放图片的父级元素
+		var imgContainer = document.getElementsByClassName(obj1)[0];
+		<!-- console.log(imgContainer); -->
+		//获取的图片文件
+		var fileList = file.files;
+		//文本框的父级元素
+		var input = document.getElementsByClassName(obj2)[0];
+		var imgArr = [];
+		//遍历获取到得图片文件
+		for (var i = 0; i < fileList.length; i++) {
+			var imgUrl = window.URL.createObjectURL(file.files[i]);
+			console.log(imgUrl);
+			var asd=imgUrl.toString();
+	
+			
+	
+
+			 
+			
+			
+			//获取下标
+			textRange = window.getSelection().getRangeAt(0);
+			
+			  if (textRange) {
+				var img = document.createElement("img");
+				img.setAttribute("src", imgUrl);
+				textRange.insertNode(img);
+				img="";
+			  }
+			
+			
+		};
+		
+	};
+
+
+
+</script>
+</body>
+</html>
