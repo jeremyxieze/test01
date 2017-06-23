@@ -143,7 +143,7 @@ body{
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
 				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />
-				<input type="file" onchange="imgChange('z_photo','z_file');" />
+		<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onclick="imgChange('z_photo','z_file');" />
 			</div>
 			<button>提交</button>
 		</div>
