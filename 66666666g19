@@ -104,6 +104,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
+		cursor: pointer;
 }
 .z_file input::-moz-file-upload-button{
 		width:0.6rem;
@@ -112,6 +113,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
+		cursor: pointer;
 }
 .z_file input::-o-file-upload-button{
 		width:0.6rem;
@@ -120,6 +122,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
+		cursor: pointer;
 }
 .z_file input::-ms-file-upload-button{
 		width:0.6rem;
@@ -128,6 +131,7 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
+		cursor: pointer;
 }
 
 
