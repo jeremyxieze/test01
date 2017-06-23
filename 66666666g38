@@ -77,6 +77,7 @@ body{
 .comments-content{
 	box-sizing:border-box;
 	padding:0.20rem;
+	position:relative;
 }
 .comments-content div{
 	resize:none;
@@ -89,7 +90,9 @@ body{
 }
 .comments-content div img{
 	display:block;
-	max-width:100%;
+	max-width:70%;
+	padding:0.2rem 0rem;
+	margin:0 auto;
 }
 .z_file input#file{
 	display: block;
@@ -105,7 +108,6 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor:pointer;
 }
 .z_file input::-moz-file-upload-button{
 		width:0.6rem;
@@ -114,7 +116,6 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor:pointer;
 }
 .z_file input::-o-file-upload-button{
 		width:0.6rem;
@@ -123,7 +124,6 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor:pointer;
 }
 .z_file input::-ms-file-upload-button{
 		width:0.6rem;
@@ -132,7 +132,6 @@ body{
 		position:absolute;
 		outline:0;
 		opacity:0;
-		cursor:pointer;
 }
 
 
@@ -142,41 +141,109 @@ body{
 	<div class="comments">
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
-				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />
-		<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onchange="imgChange('z_photo','z_file');" />
+				<img src="img/upload.jpg" />
+				<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onchange="imgChange('z_photo','z_file');" />
 			</div>
 			<button>提交</button>
 		</div>
 		<div class="comments-content">
-			<div contentEditable="plaintext-only" class="textes">阿斯顿全文的方式地方临渴掘井企鹅了看见了就绿了斯蒂芬森浪蝶狂蜂聚少离多开房间下次V上的法律框架地方<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/test1.jpg" />时代发生地方考虑下吃冰激凌上的风景味如嚼蜡看见了看见了的看法水电费收费的</div>
+			
+			<div contentEditable="plaintext-only" class="textes"></div>
 		</div>
 	</div>
 	
 <script type="text/javascript">
+	//px转换为rem
+	<!-- (function(doc, win) { -->
+		<!-- var docEl = doc.documentElement, -->
+			<!-- resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize', -->
+			<!-- recalc = function() { -->
+				<!-- var clientWidth = docEl.clientWidth; -->
+				<!-- if (!clientWidth) return; -->
+				<!-- if (clientWidth >= 640) { -->
+					<!-- docEl.style.fontSize = '100px'; -->
+				<!-- } else { -->
+					<!-- docEl.style.fontSize = 100 * (clientWidth / 640) + 'px'; -->
+				<!-- } -->
+			<!-- }; -->
 
-function imgChange(obj1, obj2) {	
-		alert(1111111111111111111);
+		<!-- if (!doc.addEventListener) return; -->
+		<!-- win.addEventListener(resizeEvt, recalc, false); -->
+		<!-- doc.addEventListener('DOMContentLoaded', recalc, false); -->
+	<!-- })(document, window); -->
+
+	function imgChange(obj1, obj2) {	
 		var $ = (sel) => document.querySelector(sel), textRange = null;
 		var edit = $('.textes'), btn = $('.btnes');	
+		//获取点击的文本框
 		var file = document.getElementById("file");
+		//存放图片的父级元素
 		var imgContainer = document.getElementsByClassName(obj1)[0];
+		<!-- console.log(imgContainer); -->
+		//获取的图片文件
 		var fileList = file.files;
+		//文本框的父级元素
 		var input = document.getElementsByClassName(obj2)[0];
 		var imgArr = [];
+		//遍历获取到得图片文件
 		for (var i = 0; i < fileList.length; i++) {
 			var imgUrl = window.URL.createObjectURL(file.files[i]);
-			console.log(imgUrl);
+			<!-- console.log(imgUrl); -->
 			var asd=imgUrl.toString();
+			<!-- console.log(img); -->
+			<!-- var imgAdd = document.createElement("div"); -->
+			<!-- imgAdd.setAttribute("class", "z_addImg"); -->
+			<!-- imgAdd.appendChild(img); -->
+			<!-- imgContainer.appendChild(imgAdd); -->
+			
+			<!-- edit.onblur = function () { -->
+			  // var sel = window.getSelection();
+			 
+			<!-- } -->
+			
+			//获取下标
 			textRange = window.getSelection().getRangeAt(0);
+			console.log(textRange);
 			  if (textRange) {
 				var img = document.createElement("img");
 				img.setAttribute("src", imgUrl);
 				textRange.insertNode(img);
 				img="";
-			  }			
+			  }
+			  else{
+				var img = document.createElement("img");
+				img.setAttribute("src", imgUrl);
+				edit.append(img);
+				img="";
+			  }
+			
+			
 		};
+		<!-- imgRemove(); -->
 	};
-	
+
+	<!-- function imgRemove() { -->
+		<!-- var imgList = document.getElementsByClassName("z_addImg"); -->
+		<!-- var mask = document.getElementsByClassName("z_mask")[0]; -->
+		<!-- var cancel = document.getElementsByClassName("z_cancel")[0]; -->
+		<!-- var sure = document.getElementsByClassName("z_sure")[0]; -->
+		<!-- for (var j = 0; j < imgList.length; j++) { -->
+			<!-- imgList[j].index = j; -->
+			<!-- imgList[j].onclick = function() { -->
+				<!-- var t = this; -->
+				<!-- mask.style.display = "block"; -->
+				<!-- cancel.onclick = function() { -->
+					<!-- mask.style.display = "none"; -->
+				<!-- }; -->
+				<!-- sure.onclick = function() { -->
+					<!-- mask.style.display = "none"; -->
+					<!-- t.style.display = "none"; -->
+				<!-- }; -->
+
+			<!-- } -->
+		<!-- }; -->
+	<!-- }; -->
+
 </script>
 </body>
 </html>
