@@ -172,16 +172,19 @@ body{
 		var edit = $('.textes'), btn = $('.btnes');	
 		//获取点击的文本框
 		var file = document.getElementById("file");
+		alert(1);
 		//存放图片的父级元素
 		var imgContainer = document.getElementsByClassName(obj1)[0];
 		<!-- console.log(imgContainer); -->
 		//获取的图片文件
 		var fileList = file.files;
+		alert(2);
 		//文本框的父级元素
 		var input = document.getElementsByClassName(obj2)[0];
 		var imgArr = [];
 		//遍历获取到得图片文件
 		for (var i = 0; i < fileList.length; i++) {
+		alert(3);
 			var imgUrl = window.URL.createObjectURL(file.files[i]);
 			console.log(imgUrl);
 			var asd=imgUrl.toString();
