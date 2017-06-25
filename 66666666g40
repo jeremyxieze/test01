@@ -152,7 +152,15 @@ body{
 		</div>
 	</div>
 	
-<script type="text/javascript">
+<script>
+	$(function(){
+		$(".textes").blur(function(){
+			var that=this;
+			setTimeout(function(){
+				$(that).focus();
+			},50);
+		})
+	});
 	//px转换为rem
 	<!-- (function(doc, win) { -->
 		<!-- var docEl = doc.documentElement, -->
@@ -172,7 +180,10 @@ body{
 		<!-- doc.addEventListener('DOMContentLoaded', recalc, false); -->
 	<!-- })(document, window); -->
 
-	function imgChange(obj1, obj2) {	
+	function imgChange(obj1,obj2) {
+		var er = event || window.event;
+		<!-- console.log(er.target.parentNode.parentNode.nextSibling.nextSibling.childNodes[1]); -->
+		var nodes=er.target.parentNode.parentNode.nextSibling.nextSibling.childNodes[1];
 		var $ = (sel) => document.querySelector(sel), textRange = null;
 		var edit = $('.textes'), btn = $('.btnes');	
 		//获取点击的文本框
@@ -186,8 +197,8 @@ body{
 		var input = document.getElementsByClassName(obj2)[0];
 		var imgArr = [];
 		//遍历获取到得图片文件
-		for (var i = 0; i < fileList.length; i++) {
-			var imgUrl = window.URL.createObjectURL(file.files[i]);
+		<!-- for (var i = 0; i < fileList.length; i++) { -->
+			var imgUrl = window.URL.createObjectURL(file.files[0]);
 			<!-- console.log(imgUrl); -->
 			var asd=imgUrl.toString();
 			<!-- console.log(img); -->
@@ -199,10 +210,26 @@ body{
 			<!-- edit.onblur = function () { -->
 			  // var sel = window.getSelection();
 			 
+			<!-- } -->	
+			var infos=edit.innerHTML;
+			<!-- console.log(infos); -->
+			if(infos.length==0)
+			{
+				alert(111);
+				console.log(nodes.childNodes[0]);
+				var img = document.createElement("img");
+				img.setAttribute("src", imgUrl);
+				<!-- var imgbg=document.getElementsByClassName(textes)[0]; -->
+				nodes.insertBefore(img,nodes.childNodes[0]);
+				img="";
+			}
+			console.log(infos);
+			<!-- edit.onblur = function(){ -->
+				
 			<!-- } -->
-			
 			//获取下标
 			textRange = window.getSelection().getRangeAt(0);
+
 			console.log(textRange);
 			  if (textRange) {
 				var img = document.createElement("img");
@@ -210,15 +237,15 @@ body{
 				textRange.insertNode(img);
 				img="";
 			  }
-			  else{
-				var img = document.createElement("img");
-				img.setAttribute("src", imgUrl);
-				edit.append(img);
-				img="";
-			  }
+			  <!-- else{ -->
+				<!-- var img = document.createElement("img"); -->
+				<!-- img.setAttribute("src", imgUrl); -->
+				<!-- edit.append(img); -->
+				<!-- img=""; -->
+			  <!-- } -->
 			
 			
-		};
+		<!-- }; -->
 		<!-- imgRemove(); -->
 	};
 
