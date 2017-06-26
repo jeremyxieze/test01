@@ -155,10 +155,15 @@ body{
 <script type="text/javascript">
 	var numss;
 	var  textRange = null;
+	var textRange_s = null;
 	$(function(){
+		$(".textes").focus(function(){
+			textRange = window.getSelection().getRangeAt(0);
+			console.log(textRange);
+		});
 		$(".textes").blur(function(){
 			textRange = window.getSelection().getRangeAt(0);
-			<!-- alert(123); -->
+			
 			console.log(textRange);
 		});
 	});
@@ -228,7 +233,7 @@ body{
 				img="";
 				return 0;
 			}
-			console.log(infos);
+			<!-- console.log(infos); -->
 			
 			
 			//获取下标
