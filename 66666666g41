@@ -141,7 +141,7 @@ body{
 	<div class="comments">
 		<div class="comments-top-button">
 			<div class="upload-img z_file btnes">
-				<img src="https://raw.githubusercontent.com/jeremyxieze/test01/master/z_add.png" />
+				<img src="img/upload.jpg" />
 				<input type="file" name="file" id="file" value="" accept="image/*" multiple="multiple" onchange="imgChange('z_photo','z_file');" />
 			</div>
 			<button>提交</button>
@@ -152,14 +152,15 @@ body{
 		</div>
 	</div>
 	
-<script>
+<script type="text/javascript">
+	var numss;
+	var  textRange = null;
 	$(function(){
 		$(".textes").blur(function(){
-			var that=this;
-			setTimeout(function(){
-				$(that).focus();
-			},50);
-		})
+			textRange = window.getSelection().getRangeAt(0);
+			<!-- alert(123); -->
+			console.log(textRange);
+		});
 	});
 	//px转换为rem
 	<!-- (function(doc, win) { -->
@@ -180,11 +181,12 @@ body{
 		<!-- doc.addEventListener('DOMContentLoaded', recalc, false); -->
 	<!-- })(document, window); -->
 
-	function imgChange(obj1,obj2) {
+	function imgChange(obj1, obj2) {	
+		alert("进入imgChange");
 		var er = event || window.event;
 		<!-- console.log(er.target.parentNode.parentNode.nextSibling.nextSibling.childNodes[1]); -->
 		var nodes=er.target.parentNode.parentNode.nextSibling.nextSibling.childNodes[1];
-		var $ = (sel) => document.querySelector(sel), textRange = null;
+		var $ = (sel) => document.querySelector(sel);
 		var edit = $('.textes'), btn = $('.btnes');	
 		//获取点击的文本框
 		var file = document.getElementById("file");
@@ -210,33 +212,34 @@ body{
 			<!-- edit.onblur = function () { -->
 			  // var sel = window.getSelection();
 			 
-			<!-- } -->	
+			<!-- } -->
+			
+			
 			var infos=edit.innerHTML;
 			<!-- console.log(infos); -->
 			if(infos.length==0)
 			{
-				alert(111);
+				alert("进入length==0");
 				console.log(nodes.childNodes[0]);
 				var img = document.createElement("img");
 				img.setAttribute("src", imgUrl);
 				<!-- var imgbg=document.getElementsByClassName(textes)[0]; -->
 				nodes.insertBefore(img,nodes.childNodes[0]);
 				img="";
+				return 0;
 			}
 			console.log(infos);
-			<!-- edit.onblur = function(){ -->
-				
-			<!-- } -->
+			
+			
 			//获取下标
-			textRange = window.getSelection().getRangeAt(0);
-
-			console.log(textRange);
-			  if (textRange) {
+			<!-- textRange = window.getSelection().getRangeAt(0); -->
+			<!-- console.log(textRange); -->
+			  <!-- if (textRange) { -->
 				var img = document.createElement("img");
 				img.setAttribute("src", imgUrl);
 				textRange.insertNode(img);
 				img="";
-			  }
+			  <!-- } -->
 			  <!-- else{ -->
 				<!-- var img = document.createElement("img"); -->
 				<!-- img.setAttribute("src", imgUrl); -->
